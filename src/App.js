@@ -1,3 +1,4 @@
+import Content from "./Content";
 import Header from "./Header";
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Content />
     </div>
   )
 }
