@@ -9,13 +9,13 @@ const Content = () => {
     }
 
     return (
-        <div>
+        <main>
             <i>
                 <b>Hello World !!</b>
                 <p>Refresh to change names</p>
                 <p>Colours: {handleNameChange()} </p>
             </i>
-        </div>
+        </main>
     )
 }
 
