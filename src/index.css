@@ -5,12 +5,22 @@
 }
 
 body {
+    min-height: 100vh;
     background-color:rgb(181, 247, 193);
     text-align: center;
 }
 
-header {
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
 
+header {
+    width: 100%;
+    padding: 0 0.25em;
     background-color:lightgreen;
     display: flex;
     justify-content: space-around;
@@ -29,6 +39,7 @@ main {
 
 footer {
     width: 100%;
+    padding: 0.25em;
     background-color: aquamarine;
     padding: 0.25em;
     display: grid;
