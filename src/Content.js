@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from "react";
+import { useState } from "react";
 
 const Content = () => {
 
@@ -16,6 +17,16 @@ const Content = () => {
         console.log(msg);
     }
 
+    const [count, setCount] = useState(0);
+
+    function incrementFunction() {
+        setCount(prevCount => prevCount + 1)
+    }
+
+    function decrementFunction() {
+        setCount(prevCount => prevCount - 1)
+    }
+
     return (
         <main>
             <i>
@@ -26,6 +37,11 @@ const Content = () => {
             </i>
             <button onClick={handleClick}> Button 1 </button>
             <button onDoubleClick={() => handleClick2("Hello World!!")}> Button 2 (Double click)</button>
+            <button onClick={incrementFunction}>+</button>
+            <span>{count}</span>
+            <button onClick={decrementFunction}>-</button>
+
+
         </main>
     )
 }
