@@ -12,7 +12,7 @@ const Content = () => {
         console.log("Button Clicked");
     }
     const handleClick2 = (msg) =>{
-        console.log(msg);
+        console.log(msg.target.innerText);
     }
 
     return (
@@ -23,7 +23,7 @@ const Content = () => {
                 <p>Colours: {handleNameChange()} </p>
             </i>
             <button onClick={handleClick}> Button 1 </button>
-            <button onClick={() => handleClick2('Hello World')}> Button 2 </button>
+            <button onClick={(e) => handleClick2(e)}> Button 2 </button>
         </main>
     )
 }
