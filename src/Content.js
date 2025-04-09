@@ -8,6 +8,13 @@ const Content = () => {
         return names[int];
     }
 
+    const handleClick = () =>{
+        console.log("Button Clicked");
+    }
+    const handleClick2 = (msg) =>{
+        console.log(msg);
+    }
+
     return (
         <main>
             <i>
@@ -15,6 +22,8 @@ const Content = () => {
                 <p>Refresh to change names</p>
                 <p>Colours: {handleNameChange()} </p>
             </i>
+            <button onClick={handleClick}> Button 1 </button>
+            <button onClick={() => handleClick2('Hello World')}> Button 2 </button>
         </main>
     )
 }
