@@ -45,11 +45,7 @@ const Content = () => {
                 item: "Reading Books"
             }
         ]
-    );
-
-    const numbers = [-2,-1,0,1,2];
-    const itemss = numbers.filter(n => n>=0).map(n => ({numbers: n}))
-    console.log(itemss);
+    )
 
     return (
         <main>
@@ -64,6 +60,21 @@ const Content = () => {
             <button onClick={incrementFunction}>+</button>
             <span>{count}</span>
             <button onClick={decrementFunction}>-</button>
+            
+            <ul>
+                {items.map((item) =>(
+                    <li>
+                        <input
+                            type="checkbox"
+                            checked = {item.checked}
+                        />
+                        <label> {item.item}</label>
+                        <button>Delete</button>
+                    </li>
+                ))
+                }
+            </ul>
+
 
 
         </main>
