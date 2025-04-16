@@ -27,6 +27,30 @@ const Content = () => {
         setCount(prevCount => prevCount - 1)
     }
 
+    const [items, setItems] = useState(
+        [
+            {
+                id:1,
+                checked:true,
+                item: "Practice Coding"
+            },
+            {
+                id:2,
+                checked:true,
+                item: "Playing Cricket"
+            },
+            {
+                id:3,
+                checked:true,
+                item: "Reading Books"
+            }
+        ]
+    );
+
+    const numbers = [-2,-1,0,1,2];
+    const itemss = numbers.map(n => ({numbers: n}))
+    console.log(itemss);
+
     return (
         <main>
             <i>
