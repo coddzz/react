@@ -48,7 +48,7 @@ const Content = () => {
     );
 
     const numbers = [-2,-1,0,1,2];
-    const itemss = numbers.map(n => (n))
+    const itemss = numbers.filter(n => n>=0)
     console.log(itemss);
 
     return (
