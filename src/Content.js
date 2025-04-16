@@ -48,7 +48,7 @@ const Content = () => {
     );
 
     const numbers = [-2,-1,0,1,2];
-    const itemss = numbers.map(n => ({numbers: n}))
+    const itemss = numbers.map(n => (n))
     console.log(itemss);
 
     return (
