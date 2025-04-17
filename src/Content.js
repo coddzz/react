@@ -20,6 +20,7 @@ const Content = () => {
 
     const [count, setCount] = useState(0);
 
+
     function incrementFunction() {
         setCount(prevCount => prevCount + 1)
     }
@@ -45,8 +46,13 @@ const Content = () => {
                 checked:false,
                 item: "Reading Books"
             }
+            
         ]
     )
+
+    const handleCheck = (id) =>{
+        console.log(`id: ${id}`)
+    }
 
     return (
         <main>
@@ -67,6 +73,7 @@ const Content = () => {
                     <li className="item" key={item.id}>
                         <input
                             type="checkbox"
+                            onChange={() => handleCheck(item.id)}
                             checked = {item.checked}
                         />
                         <label> {item.item}</label>
