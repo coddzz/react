@@ -42,7 +42,7 @@ const Content = () => {
             },
             {
                 id:3,
-                checked:true,
+                checked:false,
                 item: "Reading Books"
             }
         ]
@@ -64,7 +64,7 @@ const Content = () => {
             
             <ul>
                 {items.map((item) =>(
-                    <li>
+                    <li className="item" key={item.id}>
                         <input
                             type="checkbox"
                             checked = {item.checked}
