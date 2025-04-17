@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { FaTrash } from "react-icons/fa";
 
 const Content = () => {
 
@@ -69,14 +70,14 @@ const Content = () => {
                             checked = {item.checked}
                         />
                         <label> {item.item}</label>
-                        <button>Delete</button>
+                        <FaTrash 
+                            role = "button"
+                            tabIndex = "0"
+                        />
                     </li>
                 ))
                 }
             </ul>
-
-
-
         </main>
     )
 }
